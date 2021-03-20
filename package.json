@@ -1,4 +1,5 @@
 {
+  "homepage": "https://minki607.github.io/react-movie-finder",
   "name": "react-movie-finder",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

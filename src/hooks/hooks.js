@@ -5,7 +5,7 @@ export const useFetch = (url) => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const fetchData = async (endpoint) => {
+  const fetchData = async (endpoint = "") => {
     setIsLoading(true);
     try {
       const res = await fetch(url + endpoint);
